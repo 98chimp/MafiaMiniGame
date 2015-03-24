@@ -26,6 +26,7 @@
 		EB2FE0981AC0CB9500742A35 /* Sherrif.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE0971AC0CB9500742A35 /* Sherrif.m */; };
 		EB2FE09B1AC0CBA500742A35 /* Villager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE09A1AC0CBA500742A35 /* Villager.m */; };
 		EB2FE09E1AC0FFB800742A35 /* PresentationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE09D1AC0FFB800742A35 /* PresentationObject.m */; };
+		EB71256F1AC1C201002F3AFE /* mafioso.png in Resources */ = {isa = PBXBuildFile; fileRef = EB71256E1AC1C201002F3AFE /* mafioso.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		EB2FE09A1AC0CBA500742A35 /* Villager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Villager.m; sourceTree = "<group>"; };
 		EB2FE09C1AC0FFB800742A35 /* PresentationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationObject.h; sourceTree = "<group>"; };
 		EB2FE09D1AC0FFB800742A35 /* PresentationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationObject.m; sourceTree = "<group>"; };
+		EB71256E1AC1C201002F3AFE /* mafioso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mafioso.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				EB2FE02C1AC0AE2600742A35 /* Main.storyboard */,
 				EB2FE02F1AC0AE2600742A35 /* Images.xcassets */,
 				EB2FE0311AC0AE2600742A35 /* LaunchScreen.xib */,
+				EB71256E1AC1C201002F3AFE /* mafioso.png */,
 				EB2FE0221AC0AE2600742A35 /* Supporting Files */,
 			);
 			path = MafiaMiniGame;
@@ -255,6 +258,7 @@
 			files = (
 				EB2FE0871AC0BAAC00742A35 /* SherrifViewController.xib in Resources */,
 				EB2FE02E1AC0AE2600742A35 /* Main.storyboard in Resources */,
+				EB71256F1AC1C201002F3AFE /* mafioso.png in Resources */,
 				EB2FE0821AC0BA6800742A35 /* MafiaViewController.xib in Resources */,
 				EB2FE0331AC0AE2600742A35 /* LaunchScreen.xib in Resources */,
 				EB2FE08C1AC0C99C00742A35 /* VillagerViewController.xib in Resources */,
@@ -480,6 +484,7 @@
 				EB2FE0441AC0AE2600742A35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB2FE0451AC0AE2600742A35 /* Build configuration list for PBXNativeTarget "MafiaMiniGameTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +493,7 @@
 				EB2FE0471AC0AE2600742A35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

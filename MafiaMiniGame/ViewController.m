@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    [[UIApplication sharedApplication()] setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)];
+    self.sherrifViewController = [[SherrifViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,5 +28,16 @@
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
+
+//- (void)updateVillerViewController
+//{
+//    self.villagerViewController.customizedMessageLabel.text = self.sherrifViewController.messageToPass;
+//    self.villagerViewController.villagerNumberLabel.text = [NSString stringWithFormat:@"%ld", (long)self.sherrifViewController.numberToPass];
+//}
+//
+//- (void)updateFinalViewController
+//{
+//    self.finalViewController.gameOverLabel.text = self.sherrifViewController.messageToPass;
+//}
 
 @end

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SherrifViewController.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) SherrifViewController *sherrifViewController;
+
+//- (void)updateVillerViewController;
+//- (void)updateFinalViewController;
 
 @end
 

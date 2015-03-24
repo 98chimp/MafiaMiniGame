@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         _numberOfInitialVillagers = 5;
-        _numberOfRemainingVillagers = self.numberOfInitialVillagers;
+        _numberOfRemainingVillagers = _numberOfInitialVillagers;
     }
     return self;
 }

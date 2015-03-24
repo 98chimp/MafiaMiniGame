@@ -14,15 +14,20 @@
 
 @implementation VillagerViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self updateMessage];
+    [self updateNumber];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    self.villagerNumberLabel.text = [NSString stringWithFormat: @"%d", self.villager.numberOfRemainingVillagers];
+    self.sherrifViewController = [[SherrifViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -31,6 +36,18 @@
 
 - (IBAction)villagerSubmitButton:(UIButton *)sender {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (NSString *)updateMessage
+{
+    self.customizedMessageLabel.text = self.sherrifViewController.sherrifVCObject.customMessage;
+    return self.customizedMessageLabel.text;
+}
+
+- (NSString *)updateNumber
+{
+    self.villagerNumberLabel.text = [NSString stringWithFormat:@"%d", self.sherrifViewController.sherrifVCObject.numberToPresent];
+    return self.villagerNumberLabel.text;
 }
 
 @end

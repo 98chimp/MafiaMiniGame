@@ -44,13 +44,12 @@
                      @"Humans are 98% chimp!": @"TRUE",
                      };
         _questions = [self.answers allKeys];
-        _presentationObject = self.presentationObject;
-        _villager = self.villager;
-        _pass = self.pass;
+        _pass = 0;
+        self.presentationObject = [[PresentationObject alloc] init];
+        self.villager = [[Villager alloc] init];
     }
     return self;
 }
-
 
 - (NSString *)randomQuestion {
     int random = arc4random_uniform((int)self.questions.count);

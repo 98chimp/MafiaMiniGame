@@ -24,8 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    _sherrif = self.sherrif;
-    _finalViewController = self.finalViewController;
+    self.sherrif = [[Sherrif alloc] init];
+    self.sherrifVCObject = [[PresentationObject alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,20 +47,22 @@
     switch (self.sherrif.pass) {
         case 1:
             [self performSegueWithIdentifier:@"sherrifWins" sender:self];
-            self.finalViewController.gameOverLabel.text = self.sherrif.presentationObject.customMessage;
+            self.sherrifVCObject.customMessage = self.sherrif.presentationObject.customMessage;
             break;
         case 2:
             [self performSegueWithIdentifier:@"sherrifTries" sender:self];
-            self.villagerViewController.customizedMessageLabel.text = self.sherrif.presentationObject.customMessage;
-            self.villagerViewController.villagerNumberLabel.text = [NSString stringWithFormat:@"%d", self.sherrif.presentationObject.numberToPresent];
+            self.sherrifVCObject.customMessage = self.sherrif.presentationObject.customMessage;
+            self.sherrifVCObject.numberToPresent = self.sherrif.presentationObject.numberToPresent;
+            break;
         case 3:
             [self performSegueWithIdentifier:@"sherrifTries" sender:self];
-            self.villagerViewController.customizedMessageLabel.text = self.sherrif.presentationObject.customMessage;
-            self.villagerViewController.villagerNumberLabel.text = [NSString stringWithFormat:@"%d", self.sherrif.presentationObject.numberToPresent];
+            self.sherrifVCObject.customMessage = self.sherrif.presentationObject.customMessage;
+            self.sherrifVCObject.numberToPresent = self.sherrif.presentationObject.numberToPresent;
+            break;
         case 4:
             [self performSegueWithIdentifier:@"sherrifWins" sender:self];
-            self.villagerViewController.customizedMessageLabel.text = self.sherrif.presentationObject.customMessage;
-            self.villagerViewController.villagerNumberLabel.text = [NSString stringWithFormat:@"%d", self.sherrif.presentationObject.numberToPresent];
+            self.sherrifVCObject.customMessage = self.sherrif.presentationObject.customMessage;
+            break;
         default:
             break;
     }
@@ -68,7 +70,7 @@
 
 - (void)presentQuestion
 {
-    self.sherrifQuestion.text = self.sherrif.randomQuestion;
+    self.sherrifQuestion.text = [self.sherrif randomQuestion];
 }
 
 @end

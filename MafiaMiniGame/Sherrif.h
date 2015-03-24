@@ -8,8 +8,6 @@
 
 #import "GameObject.h"
 #import "PresentationObject.h"
-#import "SherrifViewController.h"
-#import "FinalViewController.h"
 #import "Villager.h"
 
 @interface Sherrif : GameObject

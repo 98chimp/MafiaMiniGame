@@ -14,9 +14,15 @@
 
 @implementation FinalViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self updateMessage];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.sherrifViewController = [[SherrifViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,4 +32,11 @@
 
 - (IBAction)restartGameButton:(UIButton *)sender {
 }
+
+- (NSString *)updateMessage
+{
+    self.gameOverLabel.text = self.sherrifViewController.sherrifVCObject.customMessage;
+    return self.gameOverLabel.text;
+}
+
 @end
