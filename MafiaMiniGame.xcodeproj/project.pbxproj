@@ -14,6 +14,18 @@
 		EB2FE0301AC0AE2600742A35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2FE02F1AC0AE2600742A35 /* Images.xcassets */; };
 		EB2FE0331AC0AE2600742A35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2FE0311AC0AE2600742A35 /* LaunchScreen.xib */; };
 		EB2FE03F1AC0AE2600742A35 /* MafiaMiniGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE03E1AC0AE2600742A35 /* MafiaMiniGameTests.m */; };
+		EB2FE0811AC0BA6800742A35 /* MafiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE07F1AC0BA6800742A35 /* MafiaViewController.m */; };
+		EB2FE0821AC0BA6800742A35 /* MafiaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2FE0801AC0BA6800742A35 /* MafiaViewController.xib */; };
+		EB2FE0861AC0BAAC00742A35 /* SherrifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE0841AC0BAAC00742A35 /* SherrifViewController.m */; };
+		EB2FE0871AC0BAAC00742A35 /* SherrifViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2FE0851AC0BAAC00742A35 /* SherrifViewController.xib */; };
+		EB2FE08B1AC0C99C00742A35 /* VillagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE0891AC0C99C00742A35 /* VillagerViewController.m */; };
+		EB2FE08C1AC0C99C00742A35 /* VillagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2FE08A1AC0C99C00742A35 /* VillagerViewController.xib */; };
+		EB2FE08F1AC0CAEA00742A35 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE08E1AC0CAEA00742A35 /* FinalViewController.m */; };
+		EB2FE0921AC0CB3400742A35 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE0911AC0CB3400742A35 /* GameObject.m */; };
+		EB2FE0951AC0CB7200742A35 /* Mafioso.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE0941AC0CB7200742A35 /* Mafioso.m */; };
+		EB2FE0981AC0CB9500742A35 /* Sherrif.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE0971AC0CB9500742A35 /* Sherrif.m */; };
+		EB2FE09B1AC0CBA500742A35 /* Villager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE09A1AC0CBA500742A35 /* Villager.m */; };
+		EB2FE09E1AC0FFB800742A35 /* PresentationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2FE09D1AC0FFB800742A35 /* PresentationObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,27 @@
 		EB2FE0381AC0AE2600742A35 /* MafiaMiniGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MafiaMiniGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2FE03D1AC0AE2600742A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB2FE03E1AC0AE2600742A35 /* MafiaMiniGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MafiaMiniGameTests.m; sourceTree = "<group>"; };
+		EB2FE07E1AC0BA6800742A35 /* MafiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MafiaViewController.h; sourceTree = "<group>"; };
+		EB2FE07F1AC0BA6800742A35 /* MafiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MafiaViewController.m; sourceTree = "<group>"; };
+		EB2FE0801AC0BA6800742A35 /* MafiaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MafiaViewController.xib; sourceTree = "<group>"; };
+		EB2FE0831AC0BAAC00742A35 /* SherrifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SherrifViewController.h; sourceTree = "<group>"; };
+		EB2FE0841AC0BAAC00742A35 /* SherrifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SherrifViewController.m; sourceTree = "<group>"; };
+		EB2FE0851AC0BAAC00742A35 /* SherrifViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SherrifViewController.xib; sourceTree = "<group>"; };
+		EB2FE0881AC0C99C00742A35 /* VillagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VillagerViewController.h; sourceTree = "<group>"; };
+		EB2FE0891AC0C99C00742A35 /* VillagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VillagerViewController.m; sourceTree = "<group>"; };
+		EB2FE08A1AC0C99C00742A35 /* VillagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VillagerViewController.xib; sourceTree = "<group>"; };
+		EB2FE08D1AC0CAEA00742A35 /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
+		EB2FE08E1AC0CAEA00742A35 /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
+		EB2FE0901AC0CB3400742A35 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		EB2FE0911AC0CB3400742A35 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		EB2FE0931AC0CB7200742A35 /* Mafioso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mafioso.h; sourceTree = "<group>"; };
+		EB2FE0941AC0CB7200742A35 /* Mafioso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mafioso.m; sourceTree = "<group>"; };
+		EB2FE0961AC0CB9500742A35 /* Sherrif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sherrif.h; sourceTree = "<group>"; };
+		EB2FE0971AC0CB9500742A35 /* Sherrif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sherrif.m; sourceTree = "<group>"; };
+		EB2FE0991AC0CBA500742A35 /* Villager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Villager.h; sourceTree = "<group>"; };
+		EB2FE09A1AC0CBA500742A35 /* Villager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Villager.m; sourceTree = "<group>"; };
+		EB2FE09C1AC0FFB800742A35 /* PresentationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationObject.h; sourceTree = "<group>"; };
+		EB2FE09D1AC0FFB800742A35 /* PresentationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +118,24 @@
 				EB2FE0271AC0AE2600742A35 /* AppDelegate.m */,
 				EB2FE0291AC0AE2600742A35 /* ViewController.h */,
 				EB2FE02A1AC0AE2600742A35 /* ViewController.m */,
+				EB2FE07E1AC0BA6800742A35 /* MafiaViewController.h */,
+				EB2FE07F1AC0BA6800742A35 /* MafiaViewController.m */,
+				EB2FE0831AC0BAAC00742A35 /* SherrifViewController.h */,
+				EB2FE0841AC0BAAC00742A35 /* SherrifViewController.m */,
+				EB2FE0881AC0C99C00742A35 /* VillagerViewController.h */,
+				EB2FE0891AC0C99C00742A35 /* VillagerViewController.m */,
+				EB2FE08D1AC0CAEA00742A35 /* FinalViewController.h */,
+				EB2FE08E1AC0CAEA00742A35 /* FinalViewController.m */,
+				EB2FE0901AC0CB3400742A35 /* GameObject.h */,
+				EB2FE0911AC0CB3400742A35 /* GameObject.m */,
+				EB2FE09C1AC0FFB800742A35 /* PresentationObject.h */,
+				EB2FE09D1AC0FFB800742A35 /* PresentationObject.m */,
+				EB2FE0931AC0CB7200742A35 /* Mafioso.h */,
+				EB2FE0941AC0CB7200742A35 /* Mafioso.m */,
+				EB2FE0961AC0CB9500742A35 /* Sherrif.h */,
+				EB2FE0971AC0CB9500742A35 /* Sherrif.m */,
+				EB2FE0991AC0CBA500742A35 /* Villager.h */,
+				EB2FE09A1AC0CBA500742A35 /* Villager.m */,
 				EB2FE02C1AC0AE2600742A35 /* Main.storyboard */,
 				EB2FE02F1AC0AE2600742A35 /* Images.xcassets */,
 				EB2FE0311AC0AE2600742A35 /* LaunchScreen.xib */,
@@ -96,6 +147,9 @@
 		EB2FE0221AC0AE2600742A35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB2FE0801AC0BA6800742A35 /* MafiaViewController.xib */,
+				EB2FE0851AC0BAAC00742A35 /* SherrifViewController.xib */,
+				EB2FE08A1AC0C99C00742A35 /* VillagerViewController.xib */,
 				EB2FE0231AC0AE2600742A35 /* Info.plist */,
 				EB2FE0241AC0AE2600742A35 /* main.m */,
 			);
@@ -199,8 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2FE0871AC0BAAC00742A35 /* SherrifViewController.xib in Resources */,
 				EB2FE02E1AC0AE2600742A35 /* Main.storyboard in Resources */,
+				EB2FE0821AC0BA6800742A35 /* MafiaViewController.xib in Resources */,
 				EB2FE0331AC0AE2600742A35 /* LaunchScreen.xib in Resources */,
+				EB2FE08C1AC0C99C00742A35 /* VillagerViewController.xib in Resources */,
 				EB2FE0301AC0AE2600742A35 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +276,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2FE0921AC0CB3400742A35 /* GameObject.m in Sources */,
+				EB2FE08B1AC0C99C00742A35 /* VillagerViewController.m in Sources */,
+				EB2FE09E1AC0FFB800742A35 /* PresentationObject.m in Sources */,
 				EB2FE02B1AC0AE2600742A35 /* ViewController.m in Sources */,
+				EB2FE0981AC0CB9500742A35 /* Sherrif.m in Sources */,
+				EB2FE09B1AC0CBA500742A35 /* Villager.m in Sources */,
+				EB2FE0811AC0BA6800742A35 /* MafiaViewController.m in Sources */,
 				EB2FE0281AC0AE2600742A35 /* AppDelegate.m in Sources */,
 				EB2FE0251AC0AE2600742A35 /* main.m in Sources */,
+				EB2FE0861AC0BAAC00742A35 /* SherrifViewController.m in Sources */,
+				EB2FE0951AC0CB7200742A35 /* Mafioso.m in Sources */,
+				EB2FE08F1AC0CAEA00742A35 /* FinalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
