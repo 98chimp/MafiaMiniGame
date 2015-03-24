@@ -26,6 +26,8 @@
     // Do any additional setup after loading the view from its nib.
     self.sherrif = [[Sherrif alloc] init];
     self.sherrifVCObject = [[PresentationObject alloc] init];
+    self.villagerViewController = [[VillagerViewController alloc] init];
+    self.finalViewController = [[FinalViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,6 +68,13 @@
         default:
             break;
     }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    id aViewController = (FinalViewController*)segue.destinationViewController;
+    [aViewController setValue:self.sherrifVCObject forKey:@"presentationObject"];
+
 }
 
 - (void)presentQuestion

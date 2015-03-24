@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -27,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sib-vX-IIa">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="36"/>
-                                <state key="normal" title="Sherrif">
+                                <state key="normal" title="Sherif">
                                     <color key="titleColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -153,8 +154,14 @@
                             <constraint firstItem="bQw-B7-JtI" firstAttribute="centerY" secondItem="R7V-RT-mAm" secondAttribute="centerY" multiplier="1.3" id="Erj-A9-alu"/>
                             <constraint firstItem="fqa-I6-fnf" firstAttribute="centerY" secondItem="R7V-RT-mAm" secondAttribute="centerY" multiplier="0.6" id="eSc-9D-KNY"/>
                             <constraint firstAttribute="centerX" secondItem="0zQ-B4-ZF4" secondAttribute="centerX" id="hSS-oe-cDA"/>
+                            <constraint firstItem="fqa-I6-fnf" firstAttribute="leading" secondItem="R7V-RT-mAm" secondAttribute="leadingMargin" constant="70" id="hgl-Xo-zrb">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstAttribute="centerY" secondItem="0zQ-B4-ZF4" secondAttribute="centerY" id="knm-yr-75V"/>
                             <constraint firstAttribute="centerX" secondItem="bQw-B7-JtI" secondAttribute="centerX" id="rP8-7D-Smc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fqa-I6-fnf" secondAttribute="trailing" constant="70" id="vjZ-Oq-Kg1">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -165,10 +172,12 @@
                             <mask key="constraints">
                                 <exclude reference="4tN-HJ-O8I"/>
                                 <exclude reference="eSc-9D-KNY"/>
-                                <exclude reference="Erj-A9-alu"/>
-                                <exclude reference="rP8-7D-Smc"/>
+                                <exclude reference="hgl-Xo-zrb"/>
+                                <exclude reference="vjZ-Oq-Kg1"/>
                                 <exclude reference="hSS-oe-cDA"/>
                                 <exclude reference="knm-yr-75V"/>
+                                <exclude reference="Erj-A9-alu"/>
+                                <exclude reference="rP8-7D-Smc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -180,10 +189,12 @@
                             <mask key="constraints">
                                 <include reference="4tN-HJ-O8I"/>
                                 <include reference="eSc-9D-KNY"/>
-                                <include reference="Erj-A9-alu"/>
-                                <include reference="rP8-7D-Smc"/>
+                                <include reference="hgl-Xo-zrb"/>
+                                <include reference="vjZ-Oq-Kg1"/>
                                 <include reference="hSS-oe-cDA"/>
                                 <include reference="knm-yr-75V"/>
+                                <include reference="Erj-A9-alu"/>
+                                <include reference="rP8-7D-Smc"/>
                             </mask>
                         </variation>
                     </view>
@@ -235,7 +246,7 @@ Still Alive</string>
                                     <action selector="villagerSubmitButton:" destination="MUq-5k-fY7" eventType="touchUpInside" id="PbW-La-u7k"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFZ-Sz-hSP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFZ-Sz-hSP">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <string key="text">Customized
 Message</string>
@@ -246,6 +257,12 @@ Message</string>
                         </subviews>
                         <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DFZ-Sz-hSP" secondAttribute="trailing" constant="70" id="0Xm-YJ-2U1">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="DFZ-Sz-hSP" firstAttribute="leading" secondItem="LMV-k4-d0i" secondAttribute="leadingMargin" constant="70" id="392-BC-14D">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="QVI-ih-Qmp" secondAttribute="centerX" id="5ak-JW-4x2"/>
                             <constraint firstItem="DFZ-Sz-hSP" firstAttribute="centerY" secondItem="LMV-k4-d0i" secondAttribute="centerY" multiplier="1.4" id="DDd-B7-1ak"/>
                             <constraint firstAttribute="centerY" secondItem="QVI-ih-Qmp" secondAttribute="centerY" id="J63-xq-nIw"/>
@@ -265,10 +282,12 @@ Message</string>
                             <mask key="constraints">
                                 <exclude reference="Rzx-4z-psc"/>
                                 <exclude reference="mxa-0h-9nk"/>
-                                <exclude reference="DDd-B7-1ak"/>
-                                <exclude reference="hGd-0Z-VAf"/>
                                 <exclude reference="5ak-JW-4x2"/>
                                 <exclude reference="J63-xq-nIw"/>
+                                <exclude reference="0Xm-YJ-2U1"/>
+                                <exclude reference="392-BC-14D"/>
+                                <exclude reference="DDd-B7-1ak"/>
+                                <exclude reference="hGd-0Z-VAf"/>
                                 <exclude reference="YHr-19-lgh"/>
                                 <exclude reference="Z6b-Kx-Nee"/>
                             </mask>
@@ -283,10 +302,12 @@ Message</string>
                             <mask key="constraints">
                                 <include reference="Rzx-4z-psc"/>
                                 <include reference="mxa-0h-9nk"/>
-                                <include reference="DDd-B7-1ak"/>
-                                <include reference="hGd-0Z-VAf"/>
                                 <include reference="5ak-JW-4x2"/>
                                 <include reference="J63-xq-nIw"/>
+                                <include reference="0Xm-YJ-2U1"/>
+                                <include reference="392-BC-14D"/>
+                                <include reference="DDd-B7-1ak"/>
+                                <include reference="hGd-0Z-VAf"/>
                                 <include reference="YHr-19-lgh"/>
                                 <include reference="Z6b-Kx-Nee"/>
                             </mask>
@@ -326,7 +347,7 @@ Message</string>
                                     <segue destination="BYZ-38-t0r" kind="show" id="qrO-jE-1o0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lj-dX-pHP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lj-dX-pHP">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <string key="text">Game Over
 Message</string>
@@ -337,6 +358,12 @@ Message</string>
                         </subviews>
                         <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4lj-dX-pHP" secondAttribute="trailing" constant="70" id="1ZZ-2I-gfu">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="4lj-dX-pHP" firstAttribute="leading" secondItem="CST-1o-AcC" secondAttribute="leadingMargin" constant="70" id="6Ny-hk-Pyp">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="6OM-jQ-blw" secondAttribute="centerX" id="LDE-dx-pBo"/>
                             <constraint firstAttribute="centerX" secondItem="4lj-dX-pHP" secondAttribute="centerX" id="UfQ-GJ-Gkh"/>
                             <constraint firstItem="6OM-jQ-blw" firstAttribute="centerY" secondItem="CST-1o-AcC" secondAttribute="centerY" multiplier="1.8" id="n11-Cw-XwU"/>
@@ -348,6 +375,8 @@ Message</string>
                                 <exclude reference="4lj-dX-pHP"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1ZZ-2I-gfu"/>
+                                <exclude reference="6Ny-hk-Pyp"/>
                                 <exclude reference="UfQ-GJ-Gkh"/>
                                 <exclude reference="vGT-qz-AUV"/>
                                 <exclude reference="LDE-dx-pBo"/>
@@ -360,6 +389,8 @@ Message</string>
                                 <include reference="4lj-dX-pHP"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1ZZ-2I-gfu"/>
+                                <include reference="6Ny-hk-Pyp"/>
                                 <include reference="UfQ-GJ-Gkh"/>
                                 <include reference="vGT-qz-AUV"/>
                                 <include reference="LDE-dx-pBo"/>
@@ -399,13 +430,13 @@ Message</string>
                                     <action selector="mafiosoKillButton:" destination="ZNc-o6-cii" eventType="touchUpInside" id="fg0-7s-0IQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question goes here ..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUI-hw-Pyw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question goes here ..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUI-hw-Pyw">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                                 <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="1" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIQ-mS-8eN">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIQ-mS-8eN">
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bIQ-mS-8eN" secondAttribute="height" multiplier="13:2" id="apq-Uw-E2b"/>
@@ -437,6 +468,8 @@ Message</string>
                             <constraint firstAttribute="centerY" secondItem="bIQ-mS-8eN" secondAttribute="centerY" id="Ch9-DJ-uwa"/>
                             <constraint firstAttribute="centerX" secondItem="Xjw-7W-Muo" secondAttribute="centerX" id="bKM-qJ-Cbc"/>
                             <constraint firstItem="Xjw-7W-Muo" firstAttribute="centerY" secondItem="2eH-wi-axh" secondAttribute="centerY" multiplier="1.3" id="ecf-51-sQd"/>
+                            <constraint firstItem="DUI-hw-Pyw" firstAttribute="leading" secondItem="2eH-wi-axh" secondAttribute="leadingMargin" constant="50" id="glt-NV-c0X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DUI-hw-Pyw" secondAttribute="trailing" constant="50" id="hAA-jM-icz"/>
                             <constraint firstAttribute="centerX" secondItem="DUI-hw-Pyw" secondAttribute="centerX" id="wdQ-Cw-ZE1"/>
                         </constraints>
                         <variation key="default">
@@ -447,11 +480,13 @@ Message</string>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0ez-27-j1x"/>
+                                <exclude reference="glt-NV-c0X"/>
+                                <exclude reference="hAA-jM-icz"/>
                                 <exclude reference="wdQ-Cw-ZE1"/>
-                                <exclude reference="bKM-qJ-Cbc"/>
-                                <exclude reference="ecf-51-sQd"/>
                                 <exclude reference="9JZ-mf-ExE"/>
                                 <exclude reference="Ch9-DJ-uwa"/>
+                                <exclude reference="bKM-qJ-Cbc"/>
+                                <exclude reference="ecf-51-sQd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -462,11 +497,13 @@ Message</string>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0ez-27-j1x"/>
+                                <include reference="glt-NV-c0X"/>
+                                <include reference="hAA-jM-icz"/>
                                 <include reference="wdQ-Cw-ZE1"/>
-                                <include reference="bKM-qJ-Cbc"/>
-                                <include reference="ecf-51-sQd"/>
                                 <include reference="9JZ-mf-ExE"/>
                                 <include reference="Ch9-DJ-uwa"/>
+                                <include reference="bKM-qJ-Cbc"/>
+                                <include reference="ecf-51-sQd"/>
                             </mask>
                         </variation>
                     </view>
@@ -485,7 +522,7 @@ Message</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9gF-uH-tVs"/>
-        <segue reference="biv-CI-gYP"/>
+        <segue reference="G7L-P5-c3y"/>
+        <segue reference="XVC-vn-GTN"/>
     </inferredMetricsTieBreakers>
 </document>

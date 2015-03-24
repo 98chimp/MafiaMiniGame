@@ -7,15 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SherrifViewController.h"
+#import "PresentationObject.h"
 
 @interface FinalViewController : UIViewController
-
-@property (strong, nonatomic) SherrifViewController *sherrifViewController;
-@property (strong, nonatomic) IBOutlet UILabel *gameOverLabel;
-@property (strong, nonatomic) IBOutlet UIButton *restartGameLabel;
-
-- (IBAction)restartGameButton:(UIButton *)sender;
-- (NSString *)updateMessage;
-
+@property (strong, nonatomic) PresentationObject *presentationObject;
 @end

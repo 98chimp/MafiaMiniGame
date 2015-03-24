@@ -9,6 +9,11 @@
 #import "FinalViewController.h"
 
 @interface FinalViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *gameOverLabel;
+@property (strong, nonatomic) IBOutlet UIButton *restartGameLabel;
+
+- (IBAction)restartGameButton:(UIButton *)sender;
+- (NSString *)updateMessage;
 
 @end
 
@@ -22,7 +27,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.sherrifViewController = [[SherrifViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,8 +39,7 @@
 
 - (NSString *)updateMessage
 {
-    self.gameOverLabel.text = self.sherrifViewController.sherrifVCObject.customMessage;
-    return self.gameOverLabel.text;
+    return self.gameOverLabel.text = self.presentationObject.customMessage;
 }
 
 @end

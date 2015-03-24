@@ -7,17 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SherrifViewController.h"
+#import "PresentationObject.h"
 
 @interface VillagerViewController : UIViewController
 
-@property (strong, nonatomic) SherrifViewController *sherrifViewController;
-@property (strong, nonatomic) IBOutlet UILabel *villagerNumberLabel;
-@property (strong, nonatomic) IBOutlet UILabel *customizedMessageLabel;
-@property (strong, nonatomic) IBOutlet UIButton *villagerSubmitLabel;
-
-- (IBAction)villagerSubmitButton:(UIButton *)sender;
-- (NSString *)updateMessage;
-- (NSString *)updateNumber;
+@property (strong, nonatomic) PresentationObject *presentationObject;
 
 @end

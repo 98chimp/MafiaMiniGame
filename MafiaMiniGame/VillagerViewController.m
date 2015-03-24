@@ -9,7 +9,13 @@
 #import "VillagerViewController.h"
 
 @interface VillagerViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *villagerNumberLabel;
+@property (strong, nonatomic) IBOutlet UILabel *customizedMessageLabel;
+@property (strong, nonatomic) IBOutlet UIButton *villagerSubmitLabel;
 
+- (IBAction)villagerSubmitButton:(UIButton *)sender;
+- (NSString *)updateMessage;
+- (NSString *)updateNumber;
 @end
 
 @implementation VillagerViewController
@@ -23,7 +29,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.sherrifViewController = [[SherrifViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,14 +45,12 @@
 
 - (NSString *)updateMessage
 {
-    self.customizedMessageLabel.text = self.sherrifViewController.sherrifVCObject.customMessage;
-    return self.customizedMessageLabel.text;
+    return self.customizedMessageLabel.text = self.presentationObject.customMessage;
 }
 
 - (NSString *)updateNumber
 {
-    self.villagerNumberLabel.text = [NSString stringWithFormat:@"%d", self.sherrifViewController.sherrifVCObject.numberToPresent];
-    return self.villagerNumberLabel.text;
+    return self.villagerNumberLabel.text = [NSString stringWithFormat:@"%d",self.presentationObject.numberToPresent];
 }
 
 @end
